@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://30jb4kc5kf5p"]
+[gd_scene load_steps=16 format=3 uid="uid://30jb4kc5kf5p"]
 
 [ext_resource type="PackedScene" uid="uid://bv1ul1qynrdwd" path="res://GameBoard/Cursor/Cursor.tscn" id="1"]
 [ext_resource type="PackedScene" uid="uid://d4mhjq651egt" path="res://Units/Unit.tscn" id="2"]
@@ -12,6 +12,8 @@
 [ext_resource type="PackedScene" uid="uid://de53ukdqyusan" path="res://Background/Map.tscn" id="10"]
 
 [ext_resource type="Script" path="res://P0.gd" id="11"]
+
+[ext_resource type="Script" path="res://battle/TestBench.gd" id="12"]
 
 [sub_resource type="Curve2D" id="1"]
 resource_local_to_scene = true
@@ -57,3 +59,7 @@ skin_offset = Vector2(5, 12)
 [node name="P0" type="CanvasLayer" parent="."]
 script = ExtResource("11")
 
+
+[node name="P1" type="CanvasLayer" parent="."]
+layer = 2
+script = ExtResource("12")
