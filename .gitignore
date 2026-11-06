@@ -1,0 +1,6 @@
+.godot/
+vendor/
+*.log
+
+builds/
+.obsidian/
